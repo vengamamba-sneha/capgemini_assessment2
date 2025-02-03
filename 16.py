@@ -1,15 +1,21 @@
 from abc import ABC,abstractmethod
-class Shape(ABC):
+class IShape(ABC):
     @abstractmethod
-    def calculate_area(self):
+    def calculatee_area(self):
         pass
-class Rectangle(Shape):
-    def calculate_area(self,len,bre):
-        print(f"area:{len*bre}")
-class Circle(Shape):
-    def calculate_area(self,radius):
-        print(f"area:{3.14*radius*radius}")
-c=Circle()
-c.calculate_area(4)
+class Rectangle(IShape):
+    def calculatee_area(self,l,b):
+        self.l=l
+        self.b=b
+        print(l*b)
+class Circle(IShape):
+    def calculatee_area(self,r):
+        self.r=r
+        print(3.14*r*r)
 r=Rectangle()
-r.calculate_area(3,4)
+r.calculatee_area(3,4)
+c=Circle()
+c.calculatee_area(3)
+        
+    
+        

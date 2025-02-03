@@ -31,8 +31,8 @@ class Calculator(ICalculator):
         print(f"Division: {num1/num2}")
 
 calc = Calculator()
-calc.add(10, 5)
-calc.subtract(50, 15)
-calc.multiply(15, 6)
-calc.divide(100, 20)
+calc.add(10, 20)
+calc.subtract(50, 10)
+calc.multiply(105, 46)
+calc.divide(10, 2)
     

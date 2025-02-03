@@ -1,21 +1,25 @@
+#from abc import ABC,abstractmethod
 class Shape:
+    #@abstractmethod
     def area(self):
-        print("area of the shape")
+        pass
 class Square(Shape):
-    def __init__(self,side):
-        self.side=side
-    def area(self):
-        print(f"area:{self.side**2}")
+    def __init__(self,s):
+        self.s=s    
+    def area(self):    
+        print(f'area: {self.s*self.s}')
 class Triangle(Shape):
-    def __init__(self,base,height):
-        self.base = base
-        self.height = height
-    def area(self):
-        print(f"area:{0.5*self.base*self.height}")
-def myfunc(obj):
-    obj.area()
-t=Triangle(5,6)
-s=Square(4)
+    def __init__(self,b,h):
+        self.b=b
+        self.h=h    
+    def area(self):  
+        print(f'area: {0.5*self.b*self.h}')
+def fun(onj):
+    onj.area()
+a=Square(4)
+fun(a)
+b=Triangle(3,4)
+fun(b)
 
-myfunc(t)
-myfunc(s)
+
+    

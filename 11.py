@@ -19,7 +19,7 @@ class Logger:
             print(f"info msg{info}")
 obj=Logger()    
 obj.log()     
-obj.log(error="connection lost")  
+obj.log(error="505")  
             
             
             
